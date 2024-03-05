@@ -1,0 +1,5 @@
+: 1709653927:0;php forEach.php
+: 1709654166:0;touch exercise.php
+: 1709654302:0;php forEach.php -S localhost:8000
+: 1709654323:0;php -S localhost:8000
+: 1709654688:0;cd ../../
