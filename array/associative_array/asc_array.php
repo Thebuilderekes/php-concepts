@@ -7,6 +7,12 @@ $myDetails = [
   "age" =>  33
 ];
 
+foreach ($myDetails as $key => $value) {
+     
+  echo "$key => $value" . PHP_EOL;
+  # code...
+}
+
 //you access this array items using the keys
 //you cannot put an associative array inside quoted string
 $myDetails["hobbies"] = ["coding", "writing", "freelance photography"] ;

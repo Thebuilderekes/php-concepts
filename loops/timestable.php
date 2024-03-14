@@ -17,7 +17,7 @@
       endfor;
       echo "</tr>";
   
-         for($row = 1; $col = 1; $row <= 12; $row++) :
+         for($row = 1, $col = 1; $row <= 12; $row++) :
            echo '<tr>';
       
                 if ($col == 1) {
