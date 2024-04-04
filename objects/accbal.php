@@ -1,7 +1,6 @@
 <?php
 
 
-$developerName;
 
 class BankAccount
 {
@@ -28,12 +27,11 @@ class BankAccount
 	}
 }
 
-$ekeopreAccBal = new BankAccount;
+$ekeopreAccBal = new BankAccount();
 
 $ekeopreAccBal->balance = 100000000;
 
 
 $ekeopreAccBal->withdraw(2000)->withdraw(2000)->withdraw(2000);
 echo $ekeopreAccBal->balance;
- echo var_dump($developerName);
-
+ var_dump($ekeopreAccBal);

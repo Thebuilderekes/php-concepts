@@ -1,6 +1,8 @@
- Read only varibles that are created within classe cannot be modified after object creation creation
-so
-```
+ Read only varibles that are created within classes cannot be modified after object  creation
+
+so in the case below, $username can only be assigned a value once, after which any attempt to reassign it to anothervalue will result in an error
+```php
+<?php
 class User {
 public readonly string $username
 
@@ -11,21 +13,27 @@ public readonly string $username
 }
 
 
-$user = new User("EKeopre")
+$user = new User("Ekeopre")
 ```
 
-so in the case above, $username can only be assigned a value once, after which any attempt to reassign it to anothervalue will result in an error
+- defined variables that have no value assigned have a default value of NULL
+
 
 - A new subclass can be created to inherit the properties of a parne class by using the ```extend``` keyword
 
 e.g
-```
+```php
+<?php
 class NewUser extends User {
 
 }
 ````
 
 Now `NewUser` will have access to all the non-private methods in `User`
+
+`NewUser` sub clsee can now have it's own private methods or variable that is unique to it along side all inherited methods that are from the parent class ```User```
+
+- Use ``$this`` keyword to call the methods of the parent class from methods in the child class.
 
 
 ## Key points about subclasses in PHP:
