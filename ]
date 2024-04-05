@@ -1,0 +1,20 @@
+<?php
+
+class PlayList 
+
+{
+
+  public $songs = [];
+  public $song;
+  public function addSong($song){
+   
+    $this->songs[] = $song;
+
+  }
+
+
+}
+
+
+
+?>
