@@ -1,0 +1,75 @@
+syntax on
+set clipboard=unnamedplus
+set title
+set splitbelow splitright
+set relativenumber
+set guifont=Hack:12
+set wrap
+
+set completeopt=longest,menuone
+
+  
+
+call plug#begin()
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
+let g:astro_typescript = 'enable'
+Plug 'wuelnerdotexe/vim-astro'
+Plug 'mattn/emmet-vim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'oxfist/night-owl.nvim'
+Plug 'charliesbot/night-owl.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'codota/tabnine-nvim', { 'do': './dl_binaries.sh' }
+Plug 'smzm/hydrovim'
+Plug 'turbio/bracey.vim'
+Plug 'codota/tabnine-nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree' "view files and folders in side bar
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ryanoasis/vim-devicons'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ap/vim-css-color'
+Plug 'ryanoasis/vim-devicons'
+Plug 'elvessousa/sobrio' " A theme with sober colors
+Plug 'plasticboy/vim-markdown'
+Plug 'elkowar/yuck.vim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+"Plug 'neoclide/coc-prettier'
+Plug 'manzeloth/live-server'
+ Plug 'nvim-lua/plenary.nvim'
+Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'vim-airline/vim-airline'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
+
+Plug 'davidhalter/jedi-vim'
+Plug 'w0rp/ale'
+call plug#end()
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:colorscheme = 'night-owl'
+         colorscheme night-owl
+" Ale
+let g:ale_fixers = {
+\  'elixir': ['mix_format'],
+\  'javascript': ['prettier'],
+\  'typescript': ['prettier'],
+\  'vue': ['prettier'],
+\  'scss': ['prettier'],
+\  'html': ['prettier'],
+\  'svelte': ['prettier']
+\}
+let g:ale_fix_on_save = 1
+let g:ale_completion_autoimport = 1
+
+
+
