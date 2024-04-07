@@ -6,5 +6,6 @@ $physicalBook = new PhysicalBook('lets do php', 'Ekeopre Beredugo', 3000, 2000);
 $digitalBook = new DigitalBook('The php king', 'dr php', 1000, 2000);
 
 
+echo $physicalBook->author .PHP_EOL;
 
-echo $physicalBook->getAuthor();
+echo $digitalBook->getBookDetails();

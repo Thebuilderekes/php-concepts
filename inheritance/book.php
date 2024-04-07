@@ -34,5 +34,7 @@ class Book
     return $this->price;
   }
 
-
+  public function getBookDetails() {
+    return "Title: {$this->title} Author: {$this->author}";
+  }
 }
