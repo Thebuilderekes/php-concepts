@@ -7,7 +7,7 @@
          $price *= $tax_multiplier;
          return $currency . $price;
     }
-     // mehtod
+     // method
      function productMessage($price)
      {
          echo "the price of the product is $" . "{$price}" . PHP_EOL;

@@ -11,7 +11,8 @@ class Product
   
   // constructor method
 
-// Without having to list the public variables as done above, all the public variables can be passed as arguments in the constructor directly all in one step from PHP 8 whithou 
+// Without having to list the public variables as done above, all the public variables can be passed as arguments in the constructor directly all in one step from PHP 8 without.
+ 
   public function __construct($productName = "watch", $productPrice = 2000){
 
     $this->productName = $productName;

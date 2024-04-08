@@ -1,0 +1,1 @@
+ private properties in a base class cannot be accessed from accessed from a child class but it can be access from a public method that can returns the property.
