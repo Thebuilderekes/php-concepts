@@ -1,14 +1,29 @@
 <?php
 
-class checkWallet 
+class Wallet 
 
 {
-     private $balance = 3000;     
+     public int $balance;     
+     public int $amount;
+      
 
-    public function getBalance($balance){
+     public function setBalance($balance){
         $this->balance = $balance;
-        return $this->balance;
     }
+     public function withdraw($amount){
+
+        $this->balance -= $amount; 
+     }
+
+
+     public function deposit($amount){
+       $this->balance += $amount; 
+     }
+
+
+    public function getBalance(){
+        return $this->balance;
+    } 
 }
 
  

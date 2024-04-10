@@ -1,11 +1,11 @@
  <?php
 
- $array1= array('a' =>20, 30 , 35 );
+ $array1= [12, 34, 30, 35, 2990 ];
 
- $array2= array('a' =>20, 35 , 30 );
+ $array2= [20, 35 , 30 ];
 
- $array = array_intersect_assoc($array1, $array2);
- $c = 0xAF;
+ foreach ($array1 as $number) {
 
- echo $c;
- var_dump($array);
+   echo "$number" . PHP_EOL;
+  # code...
+}
