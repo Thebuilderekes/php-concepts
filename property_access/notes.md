@@ -1,1 +1,1 @@
- private properties in a base class cannot be accessed from accessed from a child class but it can be access from a public method that can returns the property.
+ private properties in a base class cannot be accessed from accessed from a child class but it can be access from a publics method that either getters or setters either getters to returns the property or setters to change the property.
