@@ -6,6 +6,7 @@ class Wallet
      public int $balance;     
      public int $amount;
       
+     public $coin = 200;
 
      public function setBalance($balance){
         $this->balance = $balance;
